@@ -62,6 +62,7 @@ class _QuizState extends State<Quiz2> {
     }
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor:
             Colors.white, // cor do fundo do app - Color(0xFF4A0975)

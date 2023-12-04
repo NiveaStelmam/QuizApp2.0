@@ -15,6 +15,7 @@ class Resultado extends StatelessWidget {
     final argumentos = ModalRoute.of(context)?.settings.arguments as Argumentos;
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor:
             Colors.white, // cor do fundo do app - Color(0xFF4A0975)

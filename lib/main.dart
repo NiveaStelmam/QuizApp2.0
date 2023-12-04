@@ -6,23 +6,23 @@ import 'quiz.dart';
 import 'resultados.dart';
 
 void main() {
-  //runApp(Resultado(acertos: 3));
-  //runApp(Quiz());
-
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(initialRoute: 'Homepage', routes: {
-      '/': (context) => Homepage(),
-      'Quiz': (context) => Quiz(),
-      'Quiz2': (context) => Quiz2(),
-      'game_screen': (context) => GameScreen(),
-      Resultado.routeName: (context) => Resultado(),
-    });
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      routes: {
+        '/': (context) => Homepage(),
+        'Quiz': (context) => Quiz(),
+        'Quiz2': (context) => Quiz2(),
+        'game_screen': (context) => GameScreen(),
+        Resultado.routeName: (context) => Resultado(),
+      },
+    );
   }
 }

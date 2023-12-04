@@ -6,6 +6,7 @@ class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor:
             Colors.white, // cor do fundo do app - Color(0xFF4A0975)

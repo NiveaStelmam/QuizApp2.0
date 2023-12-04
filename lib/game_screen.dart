@@ -4,6 +4,7 @@ import 'package:quiz/quiz2.dart';
 
 void main() {
   runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: GameScreen(),
   ));
 }
